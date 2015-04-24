@@ -1,32 +1,11 @@
-<!DOCTYPE html>
-    <html>
-        <head>
-            <title> Play Game </title>
-         <style> body {
-              font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-              font-size: 24px;
-              line-height: 1.42857143;
-              color: #c8c8c8;
-              background-color: #272b30;
-                }
-                  div  {
-                    height: 300px;
-                    width: 70%;
-                    margin: 25% auto; 
-                }
-                  p {text-align: center;
-                }
-                h1{    
-                    height: 50px;
-                    width: 70%;
-                    margin: 100px auto;
-                    text-align: center }
-    </style>
-        </head>
-        <body>
-            <h1> Here's your masterpiece!</h1>
+{% extends "base.html" %}
+
+{% block title %}Play Game{% endblock %}
+
+{% block body %}
+    <h1> Here's your masterpiece!</h1>
             <div>
             <p><strong>There once was a {{ color }} {{ thing }} sitting in the Hackbright Lab. When {{ celeb }} went to pick it up, it burst into flames in a totally {{ adj }} way.</strong></p>
             </div>
-        </body>
-    </html>
+{% endblock %}
+
